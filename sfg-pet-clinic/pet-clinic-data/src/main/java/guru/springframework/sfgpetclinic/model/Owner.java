@@ -10,7 +10,10 @@ public class Owner extends BaseEntity {
     private String lastName;
 
 
-    public Owner(int i, String john, String doe) {
-        super();
+    public Owner(int i, String firstName, String lastName) {
+        super.setId((long) i);
+        this.firstName = firstName;
+        this.lastName = lastName;
+
     }
 }

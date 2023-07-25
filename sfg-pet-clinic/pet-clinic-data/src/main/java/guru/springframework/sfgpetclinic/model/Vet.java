@@ -11,5 +11,6 @@ public class Vet extends Person {
 
     public Vet(int i, String s, String ramirez) {
         super();
+        super.setId((long) i);
     }
 }

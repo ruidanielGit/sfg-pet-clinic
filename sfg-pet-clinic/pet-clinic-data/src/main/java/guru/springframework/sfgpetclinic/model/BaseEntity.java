@@ -6,6 +6,9 @@ public class BaseEntity implements Serializable {
 
     private Long id;
 
+    public BaseEntity() {
+    }
+
     public Long getId() {
         return id;
     }
@@ -13,4 +16,6 @@ public class BaseEntity implements Serializable {
     public void setId(Long id) {
         this.id = id;
     }
+
+
 }

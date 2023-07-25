@@ -8,6 +8,10 @@ public class Pet extends BaseEntity {
     private Owner owner;
     private LocalDate bday;
 
+    public Pet(Long id) {
+        super();
+    }
+
     public PetType getPetType() {
         return petType;
     }
