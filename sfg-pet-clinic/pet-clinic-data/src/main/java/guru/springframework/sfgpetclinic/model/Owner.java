@@ -1,8 +1,5 @@
 package guru.springframework.sfgpetclinic.model;
 
-import lombok.Data;
-
-@Data
 public class Owner extends BaseEntity {
 
     private String firstName;
@@ -10,10 +7,25 @@ public class Owner extends BaseEntity {
     private String lastName;
 
 
-    public Owner(int i, String firstName, String lastName) {
-        super.setId((long) i);
+    public Owner(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
 
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 }
